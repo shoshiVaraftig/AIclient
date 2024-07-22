@@ -1,0 +1,61 @@
+form {     
+    display: grid;     
+    gap: 10px;     
+    max-width: 400px;     
+    margin: 0 auto;     
+    padding: 20px;     
+    border: 1px solid red; /* גבול אדום */
+    border-radius: 10px; /* גבול מעוגל */
+    background-color: #ffffff; /* רקע לבן */
+}      
+
+label {     
+    font-weight: bold;     
+    text-align: right;   
+    color: red; /* טקסט אדום */
+    direction: rtl; /* כיוון טקסט מימין לשמאל */
+
+}      
+.create{
+    font-weight: bold;     
+    text-align:center;   
+    bottom: 5vh;
+    color: red;
+}
+
+input,   
+select {     
+    width: 100%;     
+    padding: 10px; /* נוחות */
+    font-size: 16px;     
+    border: 1px solid red; /* גבול אדום */
+    border-radius: 5px;     
+    box-sizing: border-box;   
+}      
+
+button {     
+    background-color: red; /* צבע אדום */
+    color: #ffffff; /* טקסט לבן */
+    padding: 10px 20px;     
+    border: none;     
+    border-radius: 5px;     
+    cursor: pointer;   
+}      
+
+button:hover {     
+    background-color: #ff0000; /* אדום כהה יותר להבהרה */
+}      
+
+.response {     
+    display: grid;     
+    font-size: 24px;     
+    font-weight: bold;     
+    color: #ff4444; /* טקסט אדום */
+    border: 1px solid #ff4444; /* גבול אדום */
+    padding: 20px; /* פדינג מרווח */
+    margin: 20px auto; /* מרכז את התגובה */
+    background-color: #fff0f0; /* צבע רקע אדום רך */
+    width: 80%; /* רוחב 80% */
+    text-align: center;   
+    border-radius: 10px; /* גבול מעוגל יותר */
+}

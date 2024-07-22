@@ -1,0 +1,44 @@
+  <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
+
+  <div>
+    <label for="user-input">סוג הברכה:</label>
+    <select id="user-input" name="a-input" ngModel required>
+
+    <option value="happy">שמח</option>
+    <option value="exciting">מרגש</option>
+    <option value="funny">מצחיק</option>
+    <option value="offici">רשמי</option>
+    </select>
+
+
+
+  </div>
+
+  <div>
+    <label for="age-input">גיל:</label>
+    <input type="number" id="age-input" name="b-input" ngModel required>
+  </div>
+
+  <div>
+    <label for="event-input">סוג האירוע:</label>
+    <input type="text" id="event-input" name="c-input" ngModel required>
+  </div>
+
+  <div>
+    <label for="length-input">אורך הברכה:</label>
+    <select id="length-input" name="d-input" ngModel required>
+      <option value="short">קצר</option>
+      <option value="medium">בינוני</option>
+
+      <option value="long">ארוך</option>
+    </select>
+  </div>
+
+
+  <button type="submit">צור ברכה</button>
+</form>
+<!-- הצג את התגובה בגדול -->
+<div *ngIf="responseMessage" class="response">
+  {{ responseMessage }}
+</div>
+<h3 class="create">created by Shoshi</h3>
